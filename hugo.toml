@@ -9,7 +9,7 @@ theme = 'terminal'
 
 [menu]
   [[menu.main]]
-    identifier = "portfolio"
-    name = "Portfolio"
-    url = "/"
+    identifier = "resume"
+    name = "Resume"
+    url = "https://swrnv-qc.github.io/resume/"
     weight = 1
