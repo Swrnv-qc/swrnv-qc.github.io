@@ -1,0 +1,63 @@
+/* Black and white theme override - loads after all theme CSS */
+:root {
+  --background: #000000;
+  --foreground: #c0bfbc;
+  --accent: #5e5c64;
+  --first-tone: #ffffff;
+  --second-tone: #cccccc;
+  --comment: #888888;
+}
+
+/* Make footer stick to bottom */
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.container {
+  display: flex !important;
+  flex-direction: column !important;
+  flex: 1;
+  min-height: 100vh;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 864px;
+  padding-bottom: 0 !important;
+}
+
+.content {
+  flex: 1;
+}
+
+.footer {
+  margin-top: auto;
+  padding-top: 40px !important;
+  padding-bottom: 5px !important;
+}
+
+/* Responsive improvements */
+@media (max-width: 900px) {
+  .container {
+    padding: 20px 15px 0 15px !important;
+  }
+  
+  .footer {
+    padding: 20px 0 10px 0 !important;
+  }
+  
+  .footer__inner {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .footer .copyright {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
